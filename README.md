@@ -26,18 +26,17 @@ This class works with at least the following RADIUS servers:
 
 USAGE
 =====
-´´´
+```
 require_once('radius.class.php');
 $radius = new Radius($ip_radius_server = 'radius_server_ip_address', $shared_secret = 'radius_shared_secret'[, $radius_suffix = 'optional_radius_suffix'[, $udp_timeout = udp_timeout_in_seconds[, $authentication_port = 1812]]]);
 $result = $radius->Access_Request($username = 'username', $password = 'password'[, $udp_timeout = udp_timeout_in_seconds]);
-´´´
-
+```
 
 EXAMPLES
 ========
 
 Example 1
-´´´
+```
     require_once('radius.class.php');
     $radius = new Radius('127.0.0.1', 'secret');
     $radius->SetNasIpAddress('1.2.3.4'); // Needed for some devices (not always auto-detected)
@@ -46,10 +45,10 @@ Example 1
     } else {
         echo "Authentication rejected.";
     }
-´´´
+```
 
 Example 2
-´´´
+```
     require_once('radius.class.php');
     $radius = new Radius('127.0.0.1', 'secret');
     $radius->SetNasPort(0);
@@ -62,4 +61,4 @@ Example 2
         echo "<br />";
     }
     echo $radius->GetReadableReceivedAttributes();
-´´´
+```
