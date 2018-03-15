@@ -1,6 +1,6 @@
 Pure PHP radius class
 =====================
-This current build (1.2.2 is obsolete). Take a look at the project https://github.com/dapphp/radius, which is based on this work and has been greatly enhanced by Drew Phillips (still maintained).
+This current build (1.2.2) is obsolete. Take a look at the project https://github.com/dapphp/radius, which is based on this work and has been greatly enhanced by Drew Phillips (still maintained).
 
 This Radius class is a radius client implementation in pure PHP
 following the RFC 2865 rules (http://www.ietf.org/rfc/rfc2865.txt)
