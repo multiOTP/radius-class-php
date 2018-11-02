@@ -605,6 +605,7 @@ class Radius
                     break;
                 case 'A': // Address, 32 bit value, most significant octet first.
                     $ip_array = explode(".", $value);
+                    $ip_array = (count($ip_array) < 4) ? array('0', '0', '0', '0') : $ip_array;
                     $temp_attribute = chr($type).chr(6).chr($ip_array[0]).chr($ip_array[1]).chr($ip_array[2]).chr($ip_array[3]);
                     break;
                 case 'I': // Integer, 32 bit unsigned value, most significant octet first.
