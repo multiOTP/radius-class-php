@@ -46,8 +46,8 @@
  * @author: SysCo/al
  * @since CreationDate: 2008-01-04
  * @copyright (c) 2008 by SysCo systemes de communication sa
- * @version $LastChangedRevision: 1.2.2 $
- * @version $LastChangedDate: 2009-01-05 $
+ * @version $LastChangedRevision: 1.2.3 $
+ * @version $LastChangedDate: 2018-11-03 $
  * @version $LastChangedBy: SysCo/al $
  * @link $HeadURL: radius.class.php $
  * @link http://developer.sysco.ch/php/
@@ -151,6 +151,7 @@
  *
  * Change Log
  *
+ *   2018-11-03 1.2.3 SysCo/al Added gplaza correction, Fix parsing IP v6 value
  *   2009-01-05 1.2.2 SysCo/al Added Robert Svensson feedback, Mideye RADIUS server is supported
  *   2008-11-11 1.2.1 SysCo/al Added Carlo Ferrari resolution in examples (add NAS IP Address for a VASCO Middleware server)
  *   2008-07-07 1.2   SysCo/al Added Pim Koeman (Parantion) contribution
