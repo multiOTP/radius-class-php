@@ -46,7 +46,7 @@
  * @author: SysCo/al
  * @since CreationDate: 2008-01-04
  * @copyright (c) 2008 by SysCo systemes de communication sa
- * @version $LastChangedRevision: 1.2.3 $
+ * @version $LastChangedRevision: 1.2.4 $
  * @version $LastChangedDate: 2018-11-03 $
  * @version $LastChangedBy: SysCo/al $
  * @link $HeadURL: radius.class.php $
@@ -151,6 +151,7 @@
  *
  * Change Log
  *
+ *   2018-11-03 1.2.4 SysCo/al __construct instead of the name of the class
  *   2018-11-03 1.2.3 SysCo/al Added gplaza correction, Fix parsing IP v6 value
  *   2009-01-05 1.2.2 SysCo/al Added Robert Svensson feedback, Mideye RADIUS server is supported
  *   2008-11-11 1.2.1 SysCo/al Added Carlo Ferrari resolution in examples (add NAS IP Address for a VASCO Middleware server)
@@ -174,10 +175,10 @@
  * Radius
  * Pure PHP radius class
  *
- * Creation 2008-01-04
+ * Creation 2018-11-03
  * Update 2009-01-05
  * @package radius
- * @version v.1.2.2
+ * @version v.1.2.4
  * @author SysCo/al
  *
  *********************************************************************/
@@ -213,12 +214,12 @@ class Radius
 
     /*********************************************************************
      *
-     * Name: Radius
+     * Name: __construct
      * short description: Radius class constructor
      *
      * Creation 2008-01-04
-     * Update 2009-01-05
-     * @version v.1.2.2
+     * Update 2018-11-03
+     * @version v.1.2.4
      * @author SysCo/al
      * @param string ip address of the radius server
      * @param string shared secret with the radius server
@@ -228,8 +229,14 @@ class Radius
      * @param integer accounting port
      * @return NULL
      *********************************************************************/
-    public function Radius($ip_radius_server = '127.0.0.1', $shared_secret = '', $radius_suffix = '', $udp_timeout = 5, $authentication_port = 1812, $accounting_port = 1813)
-    {
+    public function __construct(
+        $ip_radius_server = '127.0.0.1',
+        $shared_secret = '',
+        $radius_suffix = '',
+        $udp_timeout = 5,
+        $authentication_port = 1812,
+        $accounting_port = 1813
+    ) {
         $this->_radius_packet_info[1] = 'Access-Request';
         $this->_radius_packet_info[2] = 'Access-Accept';
         $this->_radius_packet_info[3] = 'Access-Reject';

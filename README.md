@@ -1,6 +1,6 @@
 Pure PHP radius class
 =====================
-This current build (1.2.3) is obsolete. Take a look at the project https://github.com/dapphp/radius, which is based on this work and has been greatly enhanced by Drew Phillips (still maintained).
+This current build (1.2.4) is obsolete. Take a look at the project https://github.com/dapphp/radius, which is based on this work and has been greatly enhanced by Drew Phillips (still maintained).
 
 This Radius class is a radius client implementation in pure PHP
 following the RFC 2865 rules (http://www.ietf.org/rfc/rfc2865.txt)
@@ -8,7 +8,7 @@ following the RFC 2865 rules (http://www.ietf.org/rfc/rfc2865.txt)
 (c) 2008-2009 SysCo systemes de communication sa
 http://developer.sysco.ch/php/
 
-Current build: 1.2.3 (2018-11-03)
+Current build: 1.2.4 (2018-11-03)
 
 [![Donate via PayPal](https://img.shields.io/badge/donate-paypal-87ceeb.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&currency_code=USD&business=paypal@sysco.ch&item_name=Donation%20for%20PHP%20radius%20class%20project)
 *Please consider supporting this project by making a donation via [PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&currency_code=USD&business=paypal@sysco.ch&item_name=Donation%20for%20PHP%20radius%20class%20project*
